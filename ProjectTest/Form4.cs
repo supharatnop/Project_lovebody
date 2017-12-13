@@ -24,12 +24,12 @@ namespace ProjectTest
             return txt;//ส่ง txt กลับไป
         }
 
-        private void Form4_Load(object sender, EventArgs e)
+        private void Form4_Load(object sender, EventArgs e)//Form4
         {
             textBox1.Text = read_file();//แสดงค่า read_file ใน textBox1
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)//ปุ่ม button1
         {
             this.Close();//คำสั่งปิดโปรแกรม
         }

@@ -17,17 +17,17 @@ namespace ProjectTest
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)//label2
         {
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)//comboBox1
         {
            
         }
 
-        private void Form3_Load(object sender, EventArgs e)
+        private void Form3_Load(object sender, EventArgs e)//Form3
         {
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;//คำสั่งให้ไม่สามารถเขียนลง comboBox1
             comboBox1.Items.Add("ไม่ออกกำลังกายหรือออกกำลังกายน้อยมาก");//combobox1 แสดงไม่ออกกำลังกายหรือออกกำลังกายน้อยมาก
@@ -37,7 +37,7 @@ namespace ProjectTest
             comboBox1.Items.Add("ออกกำลังกายหนักมากเป็นหนักกีฬา");//combobox1 แสดงออกกำลังกายหนักมากเป็นหนักกีฬา
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)//ปุ่ม button1
         {
             double sex, age, w, h, total, td, se1=0;//สร้างตัวแปล sex, age, w, h, total, td, se1=0 ที่เป็น  double
 
@@ -90,7 +90,7 @@ namespace ProjectTest
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)//ปุ่ม button2
         {
             radioButton1.Checked = false;//clear radioButton1
             radioButton2.Checked = false;//clear radioButton1
@@ -121,7 +121,7 @@ namespace ProjectTest
             this.Close();//คำสั่งปิดโปรแกรม
         }
 
-        private void textBox_age_TextChanged(object sender, EventArgs e)
+        private void textBox_age_TextChanged(object sender, EventArgs e)//textBox_age
         {
             if (check_num(textBox_age.Text) == false)//รับข้อมูลจาก textBox_age เซ็คตามเงื่อนไข check_num เท่ากับ false
             {
@@ -129,7 +129,7 @@ namespace ProjectTest
             }
         }
 
-        private void textBox_w_TextChanged(object sender, EventArgs e)
+        private void textBox_w_TextChanged(object sender, EventArgs e)//textBox_w
         {
             if (check_num(textBox_w.Text) == false)//รับข้อมูลจาก textBox_w เซ็คตามเงื่อนไข check_num เท่ากับ false
             {
@@ -137,7 +137,7 @@ namespace ProjectTest
             }
         }
 
-        private void textBox_h_TextChanged(object sender, EventArgs e)
+        private void textBox_h_TextChanged(object sender, EventArgs e)//textBox_h
         {
             if (check_num(textBox_h.Text) == false)//รับข้อมูลจาก textBox_h เซ็คตามเงื่อนไข check_num เท่ากับ false
             {
@@ -145,12 +145,12 @@ namespace ProjectTest
             }
         }
 
-        private void textBox_BMR_TextChanged(object sender, EventArgs e)
+        private void textBox_BMR_TextChanged(object sender, EventArgs e)//textBox_BMR
         {
            
         }
 
-        private void textBox_TDEE_TextChanged(object sender, EventArgs e)
+        private void textBox_TDEE_TextChanged(object sender, EventArgs e)//textBox_TDEE
         {
             
         }

@@ -18,7 +18,7 @@ namespace ProjectTest
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void Form2_Load(object sender, EventArgs e)//Form2
         {
 
         }
@@ -30,7 +30,7 @@ namespace ProjectTest
 
             f4.ShowDialog();//แสดง Form4
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)//ปุ่ม button1
         {
 
            double w, h,bmi;//สร้างตัวแปร w, h,bmi ที่เป็น double
@@ -80,7 +80,7 @@ namespace ProjectTest
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)//ปุ่ม button2
         {
             textBox1.Text = "";//Claer textBox1
             textBox2.Text = "";//Claer textBox2
@@ -89,19 +89,19 @@ namespace ProjectTest
             textBox1.Focus();//scorebar ไปปรากฏที่ textBox1
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void label7_Click(object sender, EventArgs e)//label7
         {
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)//ปุ่ม button3
         {
             this.Close();//ปิดโปรแกรม
         }
-        public static bool check_num(string data)
+        public static bool check_num(string data)//สร้าง method ชื่อ check_num 
         {
             bool c1 = false; //เป็นตัวหนังสือ //c1 = false เป็นค่าเริ่มต้น
-            if (System.Text.RegularExpressions.Regex.IsMatch(data, "[^0-9.]")) //เงื่อนไขให้เขียนตัวเลขได้เท่านั้น 
+            if (System.Text.RegularExpressions.Regex.IsMatch(data, "[^0-9.]")) //เงื่อนไขให้เขียนตัวเลขและจุดได้เท่านั้น 
             {
                 c1 = false;//ไม่ตรงตามเงื่อนไข จะเป็น false
             }
@@ -112,7 +112,7 @@ namespace ProjectTest
             return c1;//ส่งค่า c1 กลับ 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)//ปุ่มtextBox1
         {
             if (check_num(textBox1.Text) == false)//รับข้อมูลจาก textBox_age เซ็คตามเงื่อนไข check_num เท่ากับ false
             {
@@ -120,7 +120,7 @@ namespace ProjectTest
             }
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void textBox2_TextChanged(object sender, EventArgs e)//ปุ่มtextBox2
         {
             if (check_num(textBox2.Text) == false)//รับข้อมูลจาก textBox_age เซ็คตามเงื่อนไข check_num เท่ากับ false
             {
@@ -128,7 +128,7 @@ namespace ProjectTest
             }
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)//comboBox1
         {
 
         }
