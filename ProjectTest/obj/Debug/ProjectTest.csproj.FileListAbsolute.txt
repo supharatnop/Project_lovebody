@@ -1,7 +1,6 @@
 C:\Users\User\Documents\Visual Studio 2017\Project\ProjectTest\ProjectTest\bin\Debug\ProjectTest.exe.config
 C:\Users\User\Documents\Visual Studio 2017\Project\ProjectTest\ProjectTest\bin\Debug\ProjectTest.exe
 C:\Users\User\Documents\Visual Studio 2017\Project\ProjectTest\ProjectTest\bin\Debug\ProjectTest.pdb
-C:\Users\User\Documents\Visual Studio 2017\Project\ProjectTest\ProjectTest\obj\Debug\ProjectTest.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\Visual Studio 2017\Project\ProjectTest\ProjectTest\obj\Debug\ProjectTest.Form1.resources
 C:\Users\User\Documents\Visual Studio 2017\Project\ProjectTest\ProjectTest\obj\Debug\ProjectTest.Form2.resources
 C:\Users\User\Documents\Visual Studio 2017\Project\ProjectTest\ProjectTest\obj\Debug\ProjectTest.Properties.Resources.resources

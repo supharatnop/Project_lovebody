@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTest", "ProjectTest\ProjectTest.csproj", "{9B390E9C-A989-4340-B55D-9A2AB74E5DEF}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Health", "Health\Health.vdproj", "{F333433E-09D1-4CDD-966B-18073452A537}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{9B390E9C-A989-4340-B55D-9A2AB74E5DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B390E9C-A989-4340-B55D-9A2AB74E5DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B390E9C-A989-4340-B55D-9A2AB74E5DEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F333433E-09D1-4CDD-966B-18073452A537}.Debug|Any CPU.ActiveCfg = Debug
+		{F333433E-09D1-4CDD-966B-18073452A537}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
