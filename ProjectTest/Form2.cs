@@ -37,50 +37,57 @@ namespace ProjectTest
                 double w, h, bmi;//สร้างตัวแปร w, h,bmi ที่เป็น double
                 w = double.Parse(textBox1.Text);//รับค่าจาก textBox1 เก็บไว้ใน w
                 h = double.Parse(textBox2.Text);//รับค่าจาก textBox2 เก็บไว้ใน h
-                bmi = w / (h * h);//สร้างตัวแปร bmi เก็บ w / (h * h)
-                label5.Text = bmi.ToString();//ให้ bmi แสดงที่ label5
+                bmi = Math.Round(w / (h * h), 2, MidpointRounding.AwayFromZero);//สร้างตัวแปร bmi เก็บ w / (h * h)
+                if (!Double.IsInfinity(bmi))// เช็คว่ามันไม่เป็น Infinity
+                {
+                    label5.Text = bmi.ToString();//ให้ bmi แสดงที่ label5
 
-                if (bmi < 18.5)//เงื่อนไข bmi < 18.5
-                {
-                    label7.Text = "น้ำหนักต่ำกว่าเกณฑ์";//แสดง น้ำหนักต่ำกว่าเกณฑ์ ที่ label7
-                }
-                else if (bmi >= 18.5 && bmi <= 22.9)//เงื่อนไข bmi >= 18.5 && bmi <= 22.9
-                {
-                    label7.Text = "สมส่วน";//แสดง สมส่วน ที่ label7
-                }
-                else if (bmi >= 23.0 && bmi <= 24.9)//เงื่อนไข bmi >= 23.0 && bmi <= 24.9
-                {
-                    label7.Text = "น้ำหนักเกิน";//แสดง น้ำหนักเกิน ที่ label7
-                }
-                else if (bmi >= 25.0 && bmi <= 29.9)//เงื่อนไข bmi >= 25.0 && bmi <= 29.9
-                {
-                    label7.Text = "โรคอ้วน";//แสดง โรคอ้วน ที่ label7
-                }
-                else if (bmi > 30)//เงื่อนไข bmi > 30
-                {
-                    label7.Text = "โรคอ้วนอันตราย";//แสดง โรคอ้วนอันตราย ที่ label7
-                }
+                    if (bmi < 18.5)//เงื่อนไข bmi < 18.5
+                    {
+                        label7.Text = "น้ำหนักต่ำกว่าเกณฑ์";//แสดง น้ำหนักต่ำกว่าเกณฑ์ ที่ label7
+                    }
+                    else if (bmi >= 18.5 && bmi <= 22.9)//เงื่อนไข bmi >= 18.5 && bmi <= 22.9
+                    {
+                        label7.Text = "สมส่วน";//แสดง สมส่วน ที่ label7
+                    }
+                    else if (bmi >= 23.0 && bmi <= 24.9)//เงื่อนไข bmi >= 23.0 && bmi <= 24.9
+                    {
+                        label7.Text = "น้ำหนักเกิน";//แสดง น้ำหนักเกิน ที่ label7
+                    }
+                    else if (bmi >= 25.0 && bmi <= 29.9)//เงื่อนไข bmi >= 25.0 && bmi <= 29.9
+                    {
+                        label7.Text = "โรคอ้วน";//แสดง โรคอ้วน ที่ label7
+                    }
+                    else if (bmi > 30)//เงื่อนไข bmi > 30
+                    {
+                        label7.Text = "โรคอ้วนอันตราย";//แสดง โรคอ้วนอันตราย ที่ label7
+                    }
 
-                switch (label7.Text)//เซ็คเงื่อนไขจาก label7
+                    switch (label7.Text)//เซ็คเงื่อนไขจาก label7
+                    {
+                        case "น้ำหนักต่ำกว่าเกณฑ์"://เงื่อนไข น้ำหนักต่ำกว่าเกณฑ์
+                            open_tip("1");//ส่งข้อมูลไปยัง open_tip
+                            break;//หยุดการทำงาน
+                        case "สมส่วน"://เงื่อนไข สมส่วน
+                            open_tip("3");//ส่งข้อมูลไปยัง open_tip
+                            break;//หยุดการทำงาน
+                        case "น้ำหนักเกิน"://เงื่อนไข น้ำหนักเกิน
+                            open_tip("2");//ส่งข้อมูลไปยัง open_tip
+                            break;//หยุดการทำงาน
+                        case "โรคอ้วน"://เงื่อนไข โรคอ้วน
+                            open_tip("2");//ส่งข้อมูลไปยัง open_tip
+                            break;//หยุดการทำงาน
+                        case "โรคอ้วนอันตราย"://เงื่อนไข โรคอ้วนอันตราย
+                            open_tip("2");//ส่งข้อมูลไปยัง open_tip
+                            break;//หยุดการทำงาน
+                    }
+                }
+                else//ถ้าไม่เข้าเงื่อนไข
                 {
-                    case "น้ำหนักต่ำกว่าเกณฑ์"://เงื่อนไข น้ำหนักต่ำกว่าเกณฑ์
-                        open_tip("1");//ส่งข้อมูลไปยัง open_tip
-                        break;//หยุดการทำงาน
-                    case "สมส่วน"://เงื่อนไข สมส่วน
-                        open_tip("สมส่วน");//ส่งข้อมูลไปยัง open_tip
-                        break;//หยุดการทำงาน
-                    case "น้ำหนักเกิน"://เงื่อนไข น้ำหนักเกิน
-                        open_tip("2");//ส่งข้อมูลไปยัง open_tip
-                        break;//หยุดการทำงาน
-                    case "โรคอ้วน"://เงื่อนไข โรคอ้วน
-                        open_tip("2");//ส่งข้อมูลไปยัง open_tip
-                        break;//หยุดการทำงาน
-                    case "โรคอ้วนอันตราย"://เงื่อนไข โรคอ้วนอันตราย
-                        open_tip("2");//ส่งข้อมูลไปยัง open_tip
-                        break;//หยุดการทำงาน
+                    MessageBox.Show("กรุณากรอกข้อมูลใหม่");//แสดง กรุณากรอกข้อมูลใหม่ บน  MessageBox
                 }
             }
-            else
+            else//ถ้าไม่เข้าเงื่อนไข
             {
                 MessageBox.Show("กรุณากรอกข้อมูล");//แสดง กรุณากรอกข้อมูล บน  MessageBox
             }

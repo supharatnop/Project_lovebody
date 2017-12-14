@@ -52,45 +52,38 @@ namespace ProjectTest
                 if (radioButton1.Checked)//เงื่อนไข radioButton1.Checked
                 {
                     se1 = (66 + (13.7 * w) + (5 * h) - (6.8 * age));//คำนวณ (66 + (13.7 * w) +(5 * h) - (6.8 * age)) แล้วเก็บไว้ใน se1
-                    textBox_BMR.Text = se1.ToString();//ให้ se1 แสดงผลที่ textBox_BMR
                 }
                 else if (radioButton2.Checked)//เงื่อนไข radioButton2.Checked
                 {
                     se1 = (665 + (9.6 * w) + (1.8 * h) - (4.7 * age));//คำนวณ (665 + (9.6 * w ) + (1.8 * h) - (4.7 * age)) แล้วเก็บไว้ใน se1
-                    textBox_BMR.Text = se1.ToString();//ให้ se1 แสดงผลที่ textBox_BMR
                 }
 
-
+                textBox_BMR.Text = Math.Round(se1, 2, MidpointRounding.AwayFromZero).ToString();//ให้ se1 แสดงผลที่ textBox_BMR
                 if (comboBox1.Text == "ไม่ออกกำลังกายหรือออกกำลังกายน้อยมาก")//เงื่อนไข comboBox1 ไม่ออกกำลังกายหรือออกกำลังกายน้อยมาก
                 {
                     total = 1.2 * se1;//ให้ total เก็บค่า 1.2* se1 
-                    textBox_TDEE.Text = total.ToString();//ให้ total แสดงที่ textBox_TDEE
                 }
                 else if (comboBox1.Text == "ออกกำลังกายน้อยเล่นกีฬา 1-3 วัน/สัปดาห์")//เงื่อนไข comboBox1 ออกกำลังกายน้อยเล่นกีฬา 1-3 วัน/สัปดาห์
                 {
                     total = 1.375 * se1;//ให้ total เก็บค่า 1.375 * se1
-                    textBox_TDEE.Text = total.ToString();//ให้ total แสดงที่ textBox_TDEE
                 }
                 else if (comboBox1.Text == "ออกกำลังกายปานกลางเล่นกีฬา 3-5 วัน/สัปดาห์")//เงื่อนไข comboBox1 ออกกำลังกายปานกลางเล่นกีฬา 3-5 วัน/สัปดาห์
                 {
                     total = 1.55 * se1;//ให้ total เก็บค่า 1.55 * se1
-                    textBox_TDEE.Text = total.ToString();//ให้ total แสดงที่ textBox_TDEE
                 }
                 else if (comboBox1.Text == "ออกกำลังกายหนักเล่นกีฬา 6-7 วัน/สัปดาห์")//เงื่อนไข comboBox1 ออกกำลังกายหนักเล่นกีฬา 6-7 วัน/สัปดาห์
                 {
                     total = 1.725 * se1;//ให้ total เก็บค่า 1.725 * se1
-                    textBox_TDEE.Text = total.ToString();//ให้ total แสดงที่ textBox_TDEE
                 }
                 else if (comboBox1.Text == "ออกกำลังกายหนักมากเป็นหนักกีฬา")//เงื่อนไข comboBox1 ออกกำลังกายหนักมากเป็นหนักกีฬา
                 {
                     total = 1.9 * se1;//ให้ total เก็บค่า 1.9 * se1
-                    textBox_TDEE.Text = total.ToString();//ให้ total แสดงที่ textBox_TDEE
                 }
                 else//ถ้านอกเงื่อนไข
                 {
                     total = 0 * se1;//ให้ total เก็บค่า 0 * se1
-                    textBox_TDEE.Text = total.ToString();//ให้ total แสดงที่ textBox_TDEE
                 }
+                textBox_TDEE.Text = Math.Round(total, 2, MidpointRounding.AwayFromZero).ToString();//ให้ total แสดงที่ textBox_TDEE
             }
             else//ถ้านอกเงื่อนไข
             {

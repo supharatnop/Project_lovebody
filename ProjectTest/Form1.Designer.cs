@@ -73,7 +73,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(670, 503);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Memu";
+            this.tabPage1.Text = "Menu";
             // 
             // label1
             // 
@@ -92,11 +92,11 @@
             this.button2.BackColor = System.Drawing.Color.Bisque;
             this.button2.Font = new System.Drawing.Font("Angsana New", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.button2.ForeColor = System.Drawing.Color.Maroon;
-            this.button2.Location = new System.Drawing.Point(225, 316);
+            this.button2.Location = new System.Drawing.Point(225, 292);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(234, 78);
+            this.button2.Size = new System.Drawing.Size(234, 88);
             this.button2.TabIndex = 3;
-            this.button2.Text = "คำนวณพลังงานแคลลอรี่";
+            this.button2.Text = " คำนวณการเผาผลาญพลังงาน ";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
