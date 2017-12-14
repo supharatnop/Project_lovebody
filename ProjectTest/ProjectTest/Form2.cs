@@ -67,7 +67,7 @@ namespace ProjectTest
                         open_tip("1");//ส่งข้อมูลไปยัง open_tip
                         break;//หยุดการทำงาน
                     case "สมส่วน"://เงื่อนไข สมส่วน
-                        open_tip("สมส่วน");//ส่งข้อมูลไปยัง open_tip
+                        open_tip("3");//ส่งข้อมูลไปยัง open_tip
                         break;//หยุดการทำงาน
                     case "น้ำหนักเกิน"://เงื่อนไข น้ำหนักเกิน
                         open_tip("2");//ส่งข้อมูลไปยัง open_tip
